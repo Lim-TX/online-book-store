@@ -60,6 +60,10 @@
     "java:war:dev": "npm run java:war -- -Pdev,webapp",
     "java:war:prod": "npm run java:war -- -Pprod",
     "jest": "jest --coverage --logHeapUsage --maxWorkers=2 --config jest.conf.js",
+    "jest-junit": {
+      "outputDirectory": "target/test-results/jest",
+      "outputName": "TEST-frontend.xml"
+    },
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "prepare": "husky",
